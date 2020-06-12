@@ -11,7 +11,7 @@ public class Timer {
 
 	public long getTime() {
 		time=this.stopTime-this.startTime;
-		return time;
+		return time/1000000;
 	}
 
 	public void timeStart() {
@@ -25,10 +25,10 @@ public class Timer {
 	
 	
 	public long getStartTime() {
-		return startTime;
+		return startTime/1000000;
 	}
 	
 	public long getStopTime() {
-		return stopTime;
+		return stopTime/1000000;
 	}
 }
