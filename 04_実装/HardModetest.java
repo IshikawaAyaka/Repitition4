@@ -4,7 +4,7 @@ package typingGame;
 import org.junit.Test;
 
 
-public class HardModetest {
+public class HardModeTest {
 	
 	@Test
 	public void test1() {
