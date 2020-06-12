@@ -11,6 +11,8 @@ public class HardMode extends Mode{
 	//出力するための文字列
 	String[] z = new String[7];
 	
+	private String str;
+	
 	//配列を生成する
 	public HardMode(){
 		x[0] = "0";
@@ -51,12 +53,13 @@ public class HardMode extends Mode{
 		x[35] = "z";
 	}
 	//ランダムで選んだ文字を順番に配列に入れる
-	public String[] setAnswer(){
+	public void setAnswer(){
 		for(int i=0;i<7;i++) {
 			 y = (int)((Math.random() * 35) );
 			  z[i] = x[y];
 			  }
-		return z;
+		str = String.join("",z);
+		super.correctString = str;
 	}
 	
 	public void getAnswer() {
