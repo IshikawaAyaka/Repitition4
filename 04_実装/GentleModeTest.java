@@ -2,8 +2,8 @@ package typingGame;
 
 import org.junit.Test;
 
-public class EasyModeTest {
-	public static class TypingGame_—”Šm”F {
+public class GentleModeTest {
+	public static class TypingGame_ä¹±æ•°ç¢ºèª {
 
 		EasyMode easyMode = new EasyMode();
 
