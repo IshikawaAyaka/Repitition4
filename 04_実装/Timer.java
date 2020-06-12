@@ -1,21 +1,34 @@
+package typingGame;
+
 public class Timer {
 
-	private double time;
+	private long time;
+	private long startTime;
+	private long stopTime;
 
 	public Timer() {
-
 	}
 
-	public double getTime() {
-		return 0;
+	public long getTime() {
+		time=this.stopTime-this.startTime;
+		return time;
 	}
 
 	public void timeStart() {
-
+		startTime = System.nanoTime();
 	}
 
 	public void timeStop() {
-
+		stopTime = System.nanoTime();
 	}
 
+	
+	
+	public long getStartTime() {
+		return startTime;
+	}
+	
+	public long getStopTime() {
+		return stopTime;
+	}
 }
