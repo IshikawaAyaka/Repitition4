@@ -23,7 +23,7 @@ public class UITest {
 	@Test
 	public void test3() {
 		ui = new UI();
-		ui.showAssessement("Great");
+		ui.showAssessment("Great");
 	}
 
 	@Test

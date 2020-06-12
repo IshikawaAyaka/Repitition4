@@ -2,7 +2,7 @@ package typingGame;
 
 import org.junit.Test;
 
-public class GentleModeTest {
+public class EasyModeTest {
 	public static class TypingGame_乱数確認 {
 
 		EasyMode easyMode = new EasyMode();

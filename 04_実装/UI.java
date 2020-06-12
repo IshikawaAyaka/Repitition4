@@ -22,7 +22,7 @@ public class UI {
 	}
 
 	//評価を表示
-	public void showAssessement(String assessment) {
+	public void showAssessment(String assessment) {
 		System.out.println("評価：" + assessment);
 	}
 
