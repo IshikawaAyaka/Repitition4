@@ -5,35 +5,35 @@ import java.io.InputStreamReader;
 
 public class UI {
 
-	//ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	//ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	public UI() {
 	}
 
-	//³‰ğ‚Ì•¶š—ñ‚ğ•\¦
+	//æ­£è§£ã®æ–‡å­—åˆ—ã‚’è¡¨ç¤º
 	public void showString(String correctString) {
 		System.out.println("--------");
 		System.out.println(correctString);
 		System.out.println("--------");
 	}
 
-	//Š—vŠÔ‚ğ•\¦
+	//æ‰€è¦æ™‚é–“ã‚’è¡¨ç¤º
 	public void showTime(double time) {
-		System.out.println("TIMEF" + time + "•b");
+		System.out.println("TIMEï¼š" + time + "ç§’");
 	}
 
-	//•]‰¿‚ğ•\¦
+	//è©•ä¾¡ã‚’è¡¨ç¤º
 	public void showAssessement(String assessment) {
-		System.out.println("•]‰¿F" + assessment);
+		System.out.println("è©•ä¾¡ï¼š" + assessment);
 	}
 
-	//ŠÔˆá‚¢‚ğ•\¦
+	//é–“é•ã„ã‚’è¡¨ç¤º
 	public void showMistake(String message) {
 		System.out.println(message);
 	}
 
-	//ŠJn€”õ
+	//é–‹å§‹æº–å‚™
 	public void showReady() {
-        System.out.println("Ready? (ENTERƒL[‚ğ‰Ÿ‚µ‚ÄŠJn)");
+        System.out.println("Ready? (ENTERã‚­ãƒ¼ã‚’æŠ¼ã—ã¦é–‹å§‹)");
         try{
             System.in.read();
         }catch(Exception e){
@@ -41,8 +41,9 @@ public class UI {
         }
 	}
 
-	//ƒ^ƒCƒsƒ“ƒO
+	//ã‚¿ã‚¤ãƒ”ãƒ³ã‚°
 	public String typing() {
+		
 		try {
 			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 			String input = reader.readLine();
@@ -53,11 +54,11 @@ public class UI {
 
 	}
 
-	//ƒ‚[ƒh‚Ì‘I‘ğ
+	//ãƒ¢ãƒ¼ãƒ‰ã®é¸æŠ
 	public int selectMode() {
-		System.out.println("ƒ‚[ƒh‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢");
+		System.out.println("ãƒ¢ãƒ¼ãƒ‰ã‚’é¸æŠã—ã¦ãã ã•ã„");
 		System.out.println("-----------------");
-		System.out.println("* “ü—Í—á : 1:EASY, 2:HARD");
+		System.out.println("* å…¥åŠ›ä¾‹ : 1:EASY, 2:HARD");
 		int ret;
 		try {
 			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
