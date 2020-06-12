@@ -2,7 +2,6 @@ package typingGame;
 
 abstract class Mode {
 	protected String correctString;
-	private UI uI;
 
 	public Mode() {
 	}
@@ -19,6 +18,6 @@ abstract class Mode {
 	}
 
 	// 表示する文字列を決める(抽象メソッド)
-	abstract void setAnswer();
+	abstract String setAnswer();
 
 }

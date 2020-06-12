@@ -28,13 +28,14 @@ public class EasyMode extends Mode {
 	}
 
 	// ランダムに選んだ文字を順番に配列に入れる
-	public void setAnswer() {
+	public String setAnswer() {
 		for (int i = 0; i < 7; i++) {
 			y = (int) (Math.random() * 9);
 			z[i] = x[y];
 		}
 		str = String.join("",z);
 		super.correctString = str;
+		return str;
 	}
 
 	public void getAnswer() {

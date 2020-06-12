@@ -53,13 +53,14 @@ public class HardMode extends Mode{
 		x[35] = "z";
 	}
 	//ランダムで選んだ文字を順番に配列に入れる
-	public void setAnswer(){
+	public String setAnswer(){
 		for(int i=0;i<7;i++) {
 			 y = (int)((Math.random() * 35) );
 			  z[i] = x[y];
 			  }
 		str = String.join("",z);
 		super.correctString = str;
+		return str;
 	}
 	
 	public void getAnswer() {
@@ -70,3 +71,4 @@ public class HardMode extends Mode{
 	}
 
 }
+
