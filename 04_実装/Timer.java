@@ -22,13 +22,4 @@ public class Timer {
 		stopTime = System.nanoTime();
 	}
 
-	
-	
-	public long getStartTime() {
-		return startTime/1000000;
-	}
-	
-	public long getStopTime() {
-		return stopTime/1000000;
-	}
 }
