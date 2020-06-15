@@ -4,14 +4,10 @@ package typingGame;
 public class HardMode extends Mode{
 	
 	//候補の文字列
-	String[] x = new String[36];
-	
-	//ランダムな数を生成
-	int y;
+	private String[] x = new String[36];
 	
 	//出力するための文字列
-	String[] z = new String[7];
-	
+	private String[] z = new String[7];
 	private String str;
 	
 	//配列を生成する
@@ -55,6 +51,7 @@ public class HardMode extends Mode{
 	}
 	//ランダムで選んだ文字を順番に配列に入れる
 	public String setAnswer(){
+		int y;
 		for(int i=0;i<7;i++) {
 			 y = (int)((Math.random() * 35) );
 			  z[i] = x[y];
