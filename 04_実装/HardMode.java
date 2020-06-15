@@ -2,6 +2,7 @@ package typingGame;
 
 
 public class HardMode extends Mode{
+	
 	//候補の文字列
 	String[] x = new String[36];
 	
