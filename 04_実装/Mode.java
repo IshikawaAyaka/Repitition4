@@ -2,7 +2,8 @@ package typingGame;
 
 abstract class Mode {
 	protected String correctString;
-
+	
+	//コンストラクタ
 	public Mode() {
 	}
 

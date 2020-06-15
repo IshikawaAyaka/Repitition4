@@ -3,15 +3,15 @@ package typingGame;
 public class TypingGame {
 	
 	//評価するための数値
-	private final long boarderline1 = 3000;
-	private final long boarderline2 = 5500;
+	private final long boarderline1 = 4000;
+	private final long boarderline2 = 6500;
 	
 	//Mode、UI、Timerの型をつくる
 	private Mode mode;
 	private UI ui;
 	private Timer timer;
 	
-	//初期シーケンスから
+	//コンストラクタ
 	public TypingGame(){
 		timer = new Timer();
 		ui = new UI();
