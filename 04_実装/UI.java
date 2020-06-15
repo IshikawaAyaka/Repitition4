@@ -32,18 +32,19 @@ public class UI {
 	}
 
 	//開始準備
-	public void showReady() {
+	public boolean showReady() {
         System.out.println("Ready? (ENTERキーを押して開始)");
         try{
             System.in.read();
+            return true;
         }catch(Exception e){
             e.printStackTrace();
+            return false;
         }
 	}
 
 	//タイピング
 	public String typing() {
-		
 		try {
 			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 			String input = reader.readLine();
