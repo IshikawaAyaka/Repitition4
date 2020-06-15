@@ -2,15 +2,11 @@ package typingGame;
 
 public class EasyMode extends Mode {
 
-	// 候補の文字の配列を生成
-	private String[] x = new String[10];
-	
-	// 出力するための文字列を生成
-	private String[] z = new String[7];
-	private String str;
-
 	// 配列を生成する
 	public EasyMode() {
+		z = new String[7];
+		x = new String[10];
+		
 		x[0] = "0";
 		x[1] = "1";
 		x[2] = "2";
