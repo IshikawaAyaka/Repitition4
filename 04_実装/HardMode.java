@@ -3,15 +3,11 @@ package typingGame;
 
 public class HardMode extends Mode{
 	
-	//候補の文字列
-	private String[] x = new String[36];
-	
-	//出力するための文字列
-	private String[] z = new String[7];
-	private String str;
-	
 	//配列を生成する
 	public HardMode(){
+		z = new String[7];
+		x = new String[36];
+		
 		x[0] = "0";
 		x[1] = "1";
 		x[2] = "2";
